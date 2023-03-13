@@ -1,15 +1,22 @@
 import { Route, Routes } from "react-router";
 
+import Home from "./pages/Home_page/Home_page";
+import NotFound from "./pages/Not_found_page/Not_found_page";
+import Recommendation from "./pages/Recommendation_page/Recommendation_page";
+import AboutUs from "./pages/About_us_page/About_us_page";
+import Explore from "./pages/Explore_page/Explore_page";
+import Help from "./pages/Help_page/Help_page";
+
 function Layout () {
     return (
         <div className="Layout">
             <Routes>
-                <Route path="/" element={ <h2>Home</h2> } />
-                <Route path="/recommendation" element={ <h2>Recommendation</h2> } />
-                <Route path="/explore" element={ <h2>Explore</h2> } />
-                <Route path="/help" element={ <h2>Help</h2> } />
-                <Route path="/about-us" element={ <h2>About us</h2> } />
-                <Route path="*" element={ <h2>Not found</h2> } />
+                <Route path="/" element={ <Home /> } />
+                <Route path="/recommendation" element={ <Recommendation /> } />
+                <Route path="/explore" element={ <Explore /> } />
+                <Route path="/help" element={ <Help /> } />
+                <Route path="/about-us" element={ <AboutUs /> } />
+                <Route path="*" element={ <NotFound /> } />
             </Routes>
         </div>
     );
