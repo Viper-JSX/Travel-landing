@@ -37,6 +37,7 @@ function Intro () {
 
                 <Slider 
                     slides={ introSlides } 
+                    lastSlideIndex = { introSlides.length - 1 }
                     currentSlideIndex={ currentSlideIndex }
                     handleSlideChange={ handleSlideChange }
                 />
