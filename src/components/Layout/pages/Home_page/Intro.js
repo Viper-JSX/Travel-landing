@@ -1,9 +1,12 @@
+import Container from "../../../Container";
+import Slider from "../../../Slider/Slider";
+
 function Intro () {
     return (
         <section className="intro">
-            <div className="intro__inner">
-
-            </div>
+            <Container classNames={[ "intro__inner" ]}>
+                <Slider slides={ [] } />
+            </Container>
         </section>
     );
 }
