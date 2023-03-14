@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import Slide from "./Slide";
 import SliderNavigation from "./Slider_navigation";
 
-function Slider ({ slides=[] }) {
-    const [ currentSlideIndex, setCurrentSlideIndex ] = useState(0);
+function Slider ({ slides=[], currentSlideIndex, handleSlideChange }) {
 
     function handleNextSlide () {
         let nextIndex = currentSlideIndex;
@@ -13,7 +12,8 @@ function Slider ({ slides=[] }) {
             nextIndex = 0;
         }
 
-        setCurrentSlideIndex(nextIndex);
+        console.log(nextIndex, "/", slides.length - 1);
+        handleSlideChange({ nextSlideIndex: nextIndex });
     }
 
     function handlePrevSlide () {
@@ -24,13 +24,13 @@ function Slider ({ slides=[] }) {
             nextIndex = slides.length - 1;
         }
         
-        setCurrentSlideIndex(nextIndex); 
+        console.log(nextIndex, "/", slides.length - 1);
+        handleSlideChange({ nextSlideIndex: nextIndex }); 
     }
 
     return (
         <div className="slider">
             <h2>A slider</h2>
-            <Slide slide={ slides[currentSlideIndex] } />
             <SliderNavigation
                 currentSlide={ currentSlideIndex + 1 }
                 totalSlidesCount={ slides.length }
