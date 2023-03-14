@@ -1,6 +1,11 @@
+import Intro from "./Intro";
+
 function HomePage () {
     return (
-        <h2>Home page</h2>
+        <div>
+            <h2>Home page</h2>
+            <Intro />
+        </div>
     );
 }
 

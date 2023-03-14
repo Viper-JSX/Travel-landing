@@ -1,6 +1,7 @@
-function Navigation ({ children }) {
+function Navigation ({ children, classNames=[] }) {
+    
     return (
-        <nav className="navigation">
+        <nav className={`navigation ${ classNames.join(" ") }`}>
             <ul>
                 { children }
             </ul>
