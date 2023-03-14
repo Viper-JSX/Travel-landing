@@ -6,11 +6,25 @@ function Slider ({ slides=[] }) {
     const [ currentSlideIndex, setCurrentSlideIndex ] = useState(0);
 
     function handleNextSlide () {
-        console.log("Next");
+        let nextIndex = currentSlideIndex;
+        nextIndex++;
+
+        if (nextIndex >= slides.length) {
+            nextIndex = 0;
+        }
+
+        setCurrentSlideIndex(nextIndex);
     }
 
     function handlePrevSlide () {
-        console.log("Prev");
+        let nextIndex = currentSlideIndex;
+        nextIndex--;
+
+        if (nextIndex < 0) {
+            nextIndex = slides.length - 1;
+        }
+        
+        setCurrentSlideIndex(nextIndex); 
     }
 
     return (
@@ -18,7 +32,7 @@ function Slider ({ slides=[] }) {
             <h2>A slider</h2>
             <Slide slide={ slides[currentSlideIndex] } />
             <SliderNavigation
-                currentSlide={ currentSlideIndex }
+                currentSlide={ currentSlideIndex + 1 }
                 totalSlidesCount={ slides.length }
                 handleNextSlide={ handleNextSlide }
                 handlePrevSlide={ handlePrevSlide }
