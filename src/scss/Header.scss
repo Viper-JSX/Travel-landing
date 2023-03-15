@@ -1,7 +1,6 @@
 header {
     width: 100%;
     height: 240px;
-    background-color: red;
     top: 0;
     position: absolute;
     display: flex;
@@ -16,11 +15,17 @@ header {
     > ul {
         flex-direction: column;
 
+        li:not(:first-child) {
+            margin: 1.3em 0 1.3em 0;
+            font-weight: 600;
+        }
+
         .company-name {
             width: 360px;
             height: 90px;
+            margin-bottom: 2.5em;
             align-self: flex-start;
-            background-color: green;
+            background-color: #FEE252;
         }
     }
 }
@@ -31,7 +36,14 @@ header {
         padding: 0;
         list-style: none;
         display: flex;
-        align-items: center;
+
+        > li {
+            > * {
+                color: $light-color;
+                color: red;
+                text-decoration: none;
+            }
+        }
     }
 }
 

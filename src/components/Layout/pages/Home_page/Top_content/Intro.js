@@ -17,31 +17,30 @@ function Intro ({ currentSlideIndex, handleSlideChange }) {
     return (
         <section className="intro">
             <Container classNames={[ "intro__inner" ]}>
-                <Slide>
+                <Slide classNames={[ "intro__slide" ]}>
                     <h2 className="slide__title">{ currentSlide?.title }</h2>
                     <p className="slide__text">{ currentSlide?.text }</p>
                     <img className="slide__image" src={ currentSlide?.imgUrl } alt="Slide image" />
-                {
-                    currentSlide?.readMore ?
-                <ReadMoreButton to={ currentSlide.readMore } />
-                :
-                null    
-            }
+                    {
+                        currentSlide?.readMore ?
+                        <ReadMoreButton to={ currentSlide.readMore } />
+                        :
+                        null    
+                    }
+
+                    <Container classNames={[ "slider-navigation-wrapper" ]}>
+                        <SliderNavigation 
+                            lastSlideIndex = { introSlides.length - 1 }
+                            currentSlideIndex={ currentSlideIndex }
+                            totalSlidesCount={ introSlides.length }
+                            handleSlideChange={ handleSlideChange }
+                        />
+                        <SlideIndicator 
+                            currentSlideIndex={ currentSlideIndex }
+                            totalSlidesCount={ introSlides.length }
+                        />
+                    </Container>
                 </Slide>
-
-                <Container classNames={[ "slider-navigation-wrapper" ]}>
-                    <SliderNavigation 
-                        lastSlideIndex = { introSlides.length - 1 }
-                        currentSlideIndex={ currentSlideIndex }
-                        totalSlidesCount={ introSlides.length }
-                        handleSlideChange={ handleSlideChange }
-                    />
-                    <SlideIndicator 
-                        currentSlideIndex={ currentSlideIndex }
-                        totalSlidesCount={ introSlides.length }
-                    />
-                </Container>
-
             </Container>
         </section>
     );

@@ -1,6 +1,6 @@
-function Slide ({ slide={}, children }) {
+function Slide ({ slide={}, classNames=[], children }) {
     return (
-        <div className="slide">
+        <div className={ `slide ${ classNames.join(" ") }` }>
             { children }
         </div>
     );
