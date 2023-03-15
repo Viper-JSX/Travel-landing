@@ -4,11 +4,11 @@ import Slide from "../../../Slider/Slide";
 import Slider from "../../../Slider/Slider";
 import { useEffect, useState } from "react";
 import ReadMoreButton from "../../../Read_more_button";
+import SliderNavigation from "../../../Slider/Slider_navigation";
+import SlideIndicator from "../../../Slider/Slide_indicator";
 
 function Intro ({ currentSlideIndex, handleSlideChange }) {
     const [ currentSlide, setCurrentSlide ] = useState(null);
-
-    console.log(handleSlideChange)
 
     useEffect(() => {
         setCurrentSlide(introSlides[currentSlideIndex]);
@@ -30,12 +30,26 @@ function Intro ({ currentSlideIndex, handleSlideChange }) {
             }
                 </Slide>
 
-                <Slider 
+                {/* <Slider 
                     slides={ introSlides } 
                     lastSlideIndex = { introSlides.length - 1 }
                     currentSlideIndex={ currentSlideIndex }
                     handleSlideChange={ handleSlideChange }
-                />
+                /> */}
+
+                <Container classNames={[ "slider-navigation-wrapper" ]}>
+                    <SliderNavigation 
+                        lastSlideIndex = { introSlides.length - 1 }
+                        currentSlideIndex={ currentSlideIndex }
+                        totalSlidesCount={ introSlides.length }
+                        handleSlideChange={ handleSlideChange }
+                    />
+                    <SlideIndicator 
+                        currentSlideIndex={ currentSlideIndex }
+                        totalSlidesCount={ introSlides.length }
+                    />
+                </Container>
+
             </Container>
         </section>
     );

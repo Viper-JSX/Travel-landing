@@ -36,9 +36,7 @@ function Slider ({ slides=[], currentSlideIndex, lastSlideIndex, handleSlideChan
                 totalSlidesCount={ lastSlideIndex + 1 }
                 handleNextSlide={ handleNextSlide }
                 handlePrevSlide={ handlePrevSlide }
-            >
-                Outdors edition
-            </SliderNavigation>
+            />
         </div>
     );  
 }
