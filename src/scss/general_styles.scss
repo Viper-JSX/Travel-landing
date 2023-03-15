@@ -19,3 +19,17 @@ body{
 .text-bold {
     font-weight: 600;
 }
+
+.quote {
+    &::before{
+
+    }
+
+    &::after{
+
+    }
+}
+
+.quote__text {
+    font-style: italic;
+}
