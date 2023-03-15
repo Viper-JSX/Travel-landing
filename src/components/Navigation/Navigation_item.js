@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-function NavigationItem ({ to, children }) {
+function NavigationItem ({ children, to, classNames=[] }) {
     return (
-        <li>
+        <li className={ `navigation-item ${classNames.join(" ")}` }>
             <NavLink to={to} >{ children }</NavLink>
         </li>
     );

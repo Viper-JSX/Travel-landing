@@ -6,6 +6,7 @@ function Header () {
     return (
         <header className="header">
             <Navigation classNames={[ "main-navigation" ]}>
+                <NavigationItem to="/" classNames={[ "company-name" ]}>trppd__</NavigationItem>
                 <NavigationItem to="/">Home</NavigationItem>
                 <NavigationItem to="/recommendation">Recommendation</NavigationItem>
                 <NavigationItem to="/explore">Explore</NavigationItem>
