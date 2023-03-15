@@ -1,4 +1,4 @@
-function Container ({ classNames, children }) {
+function Container ({ classNames=[], children }) {
     return (
         <div className={`container ${ classNames.join("  ") }`}>
             { children }

@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
+    max-width: 1440px; //temporary
 }
 
 body{
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
