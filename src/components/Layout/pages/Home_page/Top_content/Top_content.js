@@ -1,8 +1,12 @@
+import { useState } from "react";
+
+import { introSlides } from "../../../../../various_things/slides";
+
 import Container from "../../../../Container";
 import Intro from "../Intro";
 
 function TopContent () {
-    const [ currentSlide, setCurrentSlide ] = useState(introSlides[0]);
+    const [ currentSlide, setCurrentSlide ] = useState(null);
     const [ currentSlideIndex, setCurrentSlideIndex ] = useState(0);
 
     function handleSlideChange ({ nextSlideIndex }) {
@@ -20,3 +24,5 @@ function TopContent () {
         </Container>
     );
 }
+
+export default TopContent;

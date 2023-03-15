@@ -1,21 +1,18 @@
 import { introSlides } from "../../../../various_things/slides";
-
-import { Link } from "react-router-dom";
-
 import Container from "../../../Container";
 import Slide from "../../../Slider/Slide";
 import Slider from "../../../Slider/Slider";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ReadMoreButton from "../../../Read_more_button";
 
-function Intro () {
-    const [ currentSlide, setCurrentSlide ] = useState(introSlides[0]);
-    const [ currentSlideIndex, setCurrentSlideIndex ] = useState(0);
+function Intro ({ currentSlideIndex, handleSlideChange }) {
+    const [ currentSlide, setCurrentSlide ] = useState(null);
 
-    function handleSlideChange ({ nextSlideIndex }) {
-        setCurrentSlide(introSlides[nextSlideIndex]);
-        setCurrentSlideIndex(nextSlideIndex);
-        //console.log(nextSlideIndex)
-    }
+    console.log(handleSlideChange)
+
+    useEffect(() => {
+        setCurrentSlide(introSlides[currentSlideIndex]);
+    }, [currentSlideIndex]);
 
     return (
         <section className="intro">
@@ -27,9 +24,7 @@ function Intro () {
                     <img className="slide__image" src={ currentSlide?.imgUrl } alt="Slide image" />
                 {
                     currentSlide?.readMore ?
-                <Link to={ currentSlide?.readMore } target="_blank">
-                    <button>Read more</button>
-                </Link>
+                <ReadMoreButton to={ currentSlide.readMore } />
                 :
                 null    
             }
