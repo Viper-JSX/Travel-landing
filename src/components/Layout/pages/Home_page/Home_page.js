@@ -1,4 +1,3 @@
-import Intro from "./Intro";
 import TopContent from "./Top_content/Top_content";
 
 function HomePage () {

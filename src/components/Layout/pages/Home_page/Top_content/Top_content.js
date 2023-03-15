@@ -3,7 +3,7 @@ import { useState } from "react";
 import { introSlides } from "../../../../../various_things/slides";
 
 import Container from "../../../../Container";
-import Intro from "../Intro";
+import Intro from "./Intro";
 
 function TopContent () {
     const [ currentSlide, setCurrentSlide ] = useState(null);

@@ -1,9 +1,6 @@
 import { Route, Routes } from "react-router";
 
-import Navigation from "../Navigation/Navigation";
-import NavigationItem from "../Navigation/Navigation_item";
-
-import Home from "./pages/Home_page/Home_page";
+import HomePage from "./pages/Home_page/Home_page";
 import NotFound from "./pages/Not_found_page/Not_found_page";
 import Recommendation from "./pages/Recommendation_page/Recommendation_page";
 import AboutUs from "./pages/About_us_page/About_us_page";
@@ -17,7 +14,7 @@ function Layout () {
             <Header />
 
             <Routes>
-                <Route path="/" element={ <Home /> } />
+                <Route path="/" element={ <HomePage /> } />
                 <Route path="/recommendation" element={ <Recommendation /> } />
                 <Route path="/explore" element={ <Explore /> } />
                 <Route path="/help" element={ <Help /> } />
