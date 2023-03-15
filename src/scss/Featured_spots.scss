@@ -1,0 +1,44 @@
+.featured-spots {
+    width: 100%;
+    padding: 12.5% 9% 12.5% 9%;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-spots__cards-container {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.featured-spots__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.featured-spots__cards .card {
+    width: 270px;
+}
+
+.featured-spots__cards .card h2 {
+    margin: 0;
+    padding: 2em 0 0em 0;
+}
+
+.featured-spots__cards .card img {
+    width: 100%;
+    min-width: 270px; //maybe remove
+    height: 270px;
+}
+
+.features-spots__text {
+    width: 220px;
+    margin-top: -8.3%;
+    padding: 0 4.5em 0 0;//1em 1em 1em 1em;
+    text-align: right;
+}
+
+.features-spots__text .text {
+    line-height: 21px;
+}

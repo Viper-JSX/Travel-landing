@@ -1,4 +1,6 @@
 const cardTypes = {
-    TEXT_OUTER,
-    TEXT_INNER
+    textOuter: "text-outer",
+    textInner: "text-inner"
 }
+
+export { cardTypes };

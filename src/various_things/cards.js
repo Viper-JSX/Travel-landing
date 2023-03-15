@@ -1,21 +1,51 @@
-const featuresSportsCards = [
+const featuresSpotsCards = [
     {
-        title: "Title1",
-        text: "Some card text1",
-        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg"
+        title: "Ollantaytambo",
+        text: "Lorem ipsu dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",
+        readMore: "**",
+        country: "Peru"
     },
 
     {
-        title: "Title2",
-        text: "Some card text2",
-        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg"
+        title: "Antelope Canyon",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",
+        readMore: "**",
+        country: "USA"
     },
 
     {
-        title: "Title3",
-        text: "Some card text3",
-        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg"
+        title: "Lake Louise",
+        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",
+        readMore: "**",
+        country: "Canada"
+    },
+
+    {
+        title: "Lake Louise",
+        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",
+        readMore: "**",
+        country: "Canada"
+    },
+
+    {
+        title: "Lake Louise",
+        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",
+        readMore: "**",
+        country: "Canada"
+    },
+
+    {
+        title: "Lake Louise",
+        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",
+        readMore: "**",
+        country: "Canada"
     }
 ];
 
-export { featuresSportsCards };
+export { featuresSpotsCards };

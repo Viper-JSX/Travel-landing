@@ -6,6 +6,15 @@
 body{
     margin: 0;
     padding: 0;
+    color: white;
     background-color: $background-color;
     font-family: sans-serif;
+}
+
+.text-small {
+    font-size: 0.7em;
+}
+
+.text-bold {
+    font-weight: 600;
 }
