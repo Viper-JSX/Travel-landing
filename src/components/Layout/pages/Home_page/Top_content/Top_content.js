@@ -3,6 +3,7 @@ import { useState } from "react";
 import { introSlides } from "../../../../../various_things/slides";
 
 import Container from "../../../../Container";
+import FeaturedSports from "./Featured_sports";
 import Intro from "./Intro";
 
 function TopContent () {
@@ -17,9 +18,13 @@ function TopContent () {
     return (
         <Container classNames={[ "top-content" ]}>
             <Intro 
-                currentSlide={ currentSlide } 
                 currentSlideIndex={ currentSlideIndex }
                 handleSlideChange={ handleSlideChange }
+            />
+
+            <FeaturedSports 
+                currentSlideIndex={ currentSlideIndex }
+                totalSlidesCount={ introSlides.length }
             />
         </Container>
     );
