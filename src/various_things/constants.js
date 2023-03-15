@@ -3,4 +3,7 @@ const cardTypes = {
     textInner: "text-inner"
 }
 
-export { cardTypes };
+const TEXT = "TEXT";
+const BUTTON = "BUTTON";
+
+export { cardTypes, TEXT, BUTTON };

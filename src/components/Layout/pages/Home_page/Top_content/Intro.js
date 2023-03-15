@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
+
 import { introSlides } from "../../../../../various_things/slides";
+
 import Container from "../../../../Container";
 import Slide from "../../../../Slider/Slide";
-import Slider from "../../../../Slider/Slider";
-import { useEffect, useState } from "react";
-import ReadMoreButton from "../../../../Read_more_button";
+import ReadMore from "../../../../Read_more";
 import SliderNavigation from "../../../../Slider/Slider_navigation";
 import SlideIndicator from "../../../../Slider/Slide_indicator";
 
@@ -23,7 +24,7 @@ function Intro ({ currentSlideIndex, handleSlideChange }) {
                     <img className="slide__image" src={ currentSlide?.imgUrl } alt="Slide image" />
                     {
                         currentSlide?.readMore ?
-                        <ReadMoreButton to={ currentSlide.readMore } />
+                        <ReadMore to={ currentSlide.readMore } />
                         :
                         null    
                     }

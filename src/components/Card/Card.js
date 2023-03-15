@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { TEXT } from "../../various_things/constants";
+import ReadMore from "../Read_more";
 
 function Card ({ card={}, classNames=[] }) {
     return (
@@ -15,7 +17,7 @@ function Card ({ card={}, classNames=[] }) {
 
             {
                 card.readMore ? 
-                <Link className="read-more" to={card.readMore}>Read more</Link>
+                <ReadMore to={card.readMore} type={ TEXT } />
                 :
                 null
             }
