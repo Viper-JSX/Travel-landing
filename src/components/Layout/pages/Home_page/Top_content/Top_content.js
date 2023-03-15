@@ -3,7 +3,7 @@ import { useState } from "react";
 import { introSlides } from "../../../../../various_things/slides";
 
 import Container from "../../../../Container";
-import FeaturedSports from "./Featured_sports";
+import FeaturedSpots from "./Featured_spots";
 import Intro from "./Intro";
 
 function TopContent () {
@@ -22,7 +22,7 @@ function TopContent () {
                 handleSlideChange={ handleSlideChange }
             />
 
-            <FeaturedSports 
+            <FeaturedSpots 
                 currentSlideIndex={ currentSlideIndex }
                 totalSlidesCount={ introSlides.length }
             />
