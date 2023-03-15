@@ -1,3 +1,4 @@
+import "./scss/main.scss";
 import Layout from "./components/Layout/Layout";
 
 function App(){

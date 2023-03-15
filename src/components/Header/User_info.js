@@ -4,7 +4,7 @@ import NavigationItem from "../Navigation/Navigation_item";
 
 function UserInfo () {
     return (
-        <Navigation>
+        <Navigation classNames={[ "user-info" ]}>
             <NavigationItem to="*">My Collection</NavigationItem>
             <NavigationItem to="*">
                 Gailh Pambudi

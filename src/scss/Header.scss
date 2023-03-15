@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation {
+    > ul {
+        flex-direction: column;
+    }
+}
+
+.main-navigation, .user-info {
+    > ul {
+        margin: 0;
+        padding: 0;
+        background-color: red;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.user-info {
+
+
+    > ul {
+        > li {
+            padding: 0 10px 0 10px;
+
+            &:last-child {
+                border-left: 2px solid black;
+            }
+        }
+    }
+}
+
+.icon-container {
+    background-color: blue;
+}
+
+.icon-container {
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
