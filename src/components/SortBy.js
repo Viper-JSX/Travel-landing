@@ -1,6 +1,6 @@
-function SortBy ({ sortCriterias, handleSortCriteriaChange }) {
+function SortBy ({ currentCriteria, sortCriterias, handleSortCriteriaChange }) {
     return (    
-        <select>
+        <select value={ currentCriteria } onChange={ (event) => handleSortCriteriaChange({ criteria: event.target.value }) }>
             {
                 sortCriterias.map((criteria) =>
                     <option value={ criteria }>{criteria}</option>
