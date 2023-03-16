@@ -34,7 +34,7 @@ function EditorsPick () {
                     <Container classNames={[ "editors-pick__slide__inner" ]}>
                         {
                             editorsPickSlides[currentSlideIndex].cards.map((card) => 
-                                <Card card={ card } classNames={[ cardTypes.textInner ]} />
+                                <Card card={ card } classNames={[ cardTypes.textInner ]} key={ `${ card.title }_${ card.text }` } />
                             )
                         }
                     </Container>
