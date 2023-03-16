@@ -4,16 +4,32 @@
 
 .card {
     &.text-inner {
+        width: 320px; //temporary
+        height: 320px;
         position: relative;
+        display: flex;
+        align-items: flex-end;
 
-        
+        &:hover {
+            .card__text {
+                opacity: 1;
+            } 
+        }
 
         img {
             width: 100%;
             height: 100%;
             display: inline-block;
             position: absolute;
-            z-index: -1;
+        }
+
+        & .card__text {
+            background-color: $transparent-dark-color;
+            background-color: red;
+            opacity: 0;
+            position: relative;
+            transition: 0.3s;
+            z-index: 1;
         }
     }
 }
