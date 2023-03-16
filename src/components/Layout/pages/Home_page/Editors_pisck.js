@@ -1,8 +1,18 @@
+import { useState } from "react";
+
+import { editorsPickSlides } from "../../../../various_things/slides";
+
 import Container from "../../../Container";
 import Slide from "../../../Slider/Slide";
+import SliderNavigation from "../../../Slider/Slider_navigation";
 
 function EditorsPick () {
-    
+    const [ currentSlideIndex, setCurrentSlideIndex ] = useState(0);
+
+    function handleSlideChange ({ nextSlideIndex }) {
+        console.log("change", nextSlideIndex)
+        setCurrentSlideIndex(nextSlideIndex);
+    }
 
     return (
         <section className="editors-pick">
@@ -12,6 +22,12 @@ function EditorsPick () {
             </Container>
 
             <Container classNames={[ "editor-pick__slide-container" ]} >
+                <SliderNavigation 
+                    currentSlideIndex={ currentSlideIndex } 
+                    totalSlidesCount={ editorsPickSlides.length }
+                    lastSlideIndex={ editorsPickSlides.length - 1 } 
+                    handleSlideChange={ handleSlideChange }
+                />
                 <Slide>
                     Slide1
                 </Slide>

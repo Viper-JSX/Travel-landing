@@ -107,4 +107,4 @@ const editorsPickSlides = [
     }
 ]
 
-export { introSlides };
+export { introSlides, editorsPickSlides };
