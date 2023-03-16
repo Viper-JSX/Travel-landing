@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { cardTypes } from "../../../../various_things/constants";
 
 import { editorsPickSlides } from "../../../../various_things/slides";
+import Card from "../../../Card/Card";
 
 import Container from "../../../Container";
 import Slide from "../../../Slider/Slide";
@@ -29,7 +31,13 @@ function EditorsPick () {
                     handleSlideChange={ handleSlideChange }
                 />
                 <Slide>
-                    Slide1
+                    <Container classNames={[ "editors-pick__slide__inner" ]}>
+                        {
+                            editorsPickSlides[currentSlideIndex].cards.map((card) => 
+                                <Card card={ card } classNames={[ cardTypes.textInner ]} />
+                            )
+                        }
+                    </Container>
                 </Slide>
             </Container>
         </section>
