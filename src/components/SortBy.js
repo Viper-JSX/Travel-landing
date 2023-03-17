@@ -3,7 +3,7 @@ function SortBy ({ currentCriteria, sortCriterias, handleSortCriteriaChange }) {
         <select value={ currentCriteria } onChange={ (event) => handleSortCriteriaChange({ criteria: event.target.value }) }>
             {
                 sortCriterias.map((criteria) =>
-                    <option value={ criteria }>{criteria}</option>
+                    <option value={ criteria } key={criteria}>{criteria}</option>
                 )
             }
         </select>

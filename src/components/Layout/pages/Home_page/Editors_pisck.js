@@ -16,12 +16,10 @@ function EditorsPick () {
     const [ sortCriteria, setSortCriteria ] = useState(sortCriterias[0]);
 
     function handleSortCriteriaChange ({ criteria }) {
-        console.log("Sort", criteria);
         setSortCriteria(criteria);
     }
 
     function handleSlideChange ({ nextSlideIndex }) {
-        console.log("change", nextSlideIndex)
         setCurrentSlideIndex(nextSlideIndex);
     }
 

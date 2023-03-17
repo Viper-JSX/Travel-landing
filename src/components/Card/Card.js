@@ -20,7 +20,7 @@ function Card ({ card={}, classNames=[] }) {
                 {
                     Array.isArray(card.text) ? 
                     card.text.map((text) => 
-                        <p className="card__text text text-small text-bold" >{ text }</p>
+                        <p className="card__text text text-small text-bold" key={ text } >{ text }</p>
                     )
                     :
                     <p className="card__text text text-small text-bold" >{ card.text }</p>

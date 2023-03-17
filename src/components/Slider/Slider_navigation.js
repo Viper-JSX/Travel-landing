@@ -9,7 +9,6 @@ function SliderNavigation ({ currentSlideIndex, lastSlideIndex, totalSlidesCount
             nextIndex = 0;
         }
 
-        console.log(nextIndex, "/", totalSlidesCount - 1);
         handleSlideChange({ nextSlideIndex: nextIndex });
     }
 
@@ -21,7 +20,6 @@ function SliderNavigation ({ currentSlideIndex, lastSlideIndex, totalSlidesCount
             nextIndex = lastSlideIndex;
         }
         
-        console.log(nextIndex, "/", totalSlidesCount - 1);
         handleSlideChange({ nextSlideIndex: nextIndex }); 
     }
     

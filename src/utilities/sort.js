@@ -5,7 +5,6 @@ function sort (array, sortCriteria=SORT_BY_TITLE, order=1) {
 
     switch (sortCriteria) {
         case SORT_BY_NAME: {
-            console.log("name");
             sorted.sort((a, b) => {
                 return (
                     order === 1 ? 
@@ -18,8 +17,7 @@ function sort (array, sortCriteria=SORT_BY_TITLE, order=1) {
         }
 
         case SORT_BY_TITLE: {
-            console.log("title");
-            console.log( sorted.sort((a, b) => {
+            sorted.sort((a, b) => {
                 return (
                     order === 1 ? 
                     a.title.localeCompare(b.title)
@@ -27,12 +25,11 @@ function sort (array, sortCriteria=SORT_BY_TITLE, order=1) {
                     b.title.localeCompare(a.title)
                 );  
                 
-            }));
+            });
             break;
         }
 
         case SORT_BY_COUNTRY: {
-            console.log("country");
             sorted.sort((a, b) => {
                 return (
                     order === 1 ? 

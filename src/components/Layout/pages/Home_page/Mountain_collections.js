@@ -15,7 +15,7 @@ function MountainCollections () {
 
                 <Container classNames={[ "mountain-collections__cards" ]}>
                     {
-                        mountainCollectionsCards.map((card) => <Card card={ card } classNames={[ "landscape" ]} />)
+                        mountainCollectionsCards.map((card) => <Card card={ card } classNames={[ "landscape" ]} key={ `${ card.title }_${ card.text }` } />)
                     }
                 </Container>
             </Container>

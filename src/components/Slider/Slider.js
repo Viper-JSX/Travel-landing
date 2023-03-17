@@ -12,7 +12,6 @@ function Slider ({ slides=[], currentSlideIndex, lastSlideIndex, handleSlideChan
             nextIndex = 0;
         }
 
-        console.log(nextIndex, "/", slides.length - 1);
         handleSlideChange({ nextSlideIndex: nextIndex });
     }
 
@@ -24,7 +23,6 @@ function Slider ({ slides=[], currentSlideIndex, lastSlideIndex, handleSlideChan
             nextIndex = lastSlideIndex;
         }
         
-        console.log(nextIndex, "/", slides.length - 1);
         handleSlideChange({ nextSlideIndex: nextIndex }); 
     }
 

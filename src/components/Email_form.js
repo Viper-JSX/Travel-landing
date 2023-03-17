@@ -5,7 +5,6 @@ function EmailForm ({ handleSubmit }) {
 
     function handleFormChange (event) {
         setForm({ ...form, [ event.target.name ]: event.target.value  });
-        console.log("Change", form);
     }
 
     return (
