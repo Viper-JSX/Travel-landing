@@ -1,3 +1,4 @@
+import Footer from "../../../Footer/Footer";
 import AboveTheSea from "./Above_the_sea";
 import EditorsPick from "./Editors_pisck";
 import MountainCollections from "./Mountain_collections";
@@ -12,6 +13,7 @@ function HomePage ({ handleEmailSubscribe }) {
             <EditorsPick />
             <MountainCollections />
             <Subscribe handleEmailSubscribe={ handleEmailSubscribe } />
+            <Footer />
         </div>
     );
 }
