@@ -1,8 +1,9 @@
 import EmailForm from "../../../Email_form";
 
 function Subscribe () {
-    function handleEmailFormSubmit (form) {
-        console.log("Submit", form);
+    function handleEmailFormSubmit ({ event, formData }) {
+        event.preventDefault();
+        console.log("Submit", formData);
     }
 
     return (

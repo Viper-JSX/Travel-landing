@@ -9,11 +9,7 @@ function EmailForm ({ handleSubmit }) {
     }
 
     return (
-        <form className="subscribe-form" onSubmit={ (event) =>  {
-                event.preventDefault();
-                handleSubmit(form);
-            }
-        }>
+        <form className="subscribe-form" onSubmit={ (event) =>  handleSubmit({ event, formData: form }) }>
             <input 
                 type="email" 
                 name="email"
