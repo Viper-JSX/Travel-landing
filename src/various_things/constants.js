@@ -3,6 +3,11 @@ const cardTypes = {
     textInner: "text-inner"
 }
 
+const cardModes = {
+    portrait: "portrait",
+    landscape: "landscape"
+}
+
 const TEXT = "TEXT";
 const BUTTON = "BUTTON";
 
