@@ -16,7 +16,15 @@ function Card ({ card={}, classNames=[] }) {
                     :
                     null                
                 }
-                <p className="card__text text text-small text-bold" >{ card.text }</p>
+                
+                {
+                    Array.isArray(card.text) ? 
+                    card.text.map((text) => 
+                        <p className="card__text text text-small text-bold" >{ text }</p>
+                    )
+                    :
+                    <p className="card__text text text-small text-bold" >{ card.text }</p>
+                }
 
                 {
                     card.readMore ? 
