@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router";
 
+import AppNavigationBar from "../Navigation/App_navigation_bar";
 import HomePage from "./pages/Home_page/Home_page";
 import NotFound from "./pages/Not_found_page/Not_found_page";
 import Recommendation from "./pages/Recommendation_page/Recommendation_page";
@@ -12,6 +13,8 @@ function Layout ({ handleEmailSubscribe }) {
     return (
         <div className="Layout">
             <Header />
+
+            <AppNavigationBar />
 
             <Routes>
                 <Route path="/" element={ <HomePage handleEmailSubscribe={ handleEmailSubscribe } /> } />

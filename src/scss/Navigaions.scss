@@ -1,0 +1,44 @@
+.app-navigation-bar {
+
+}
+
+.app-navigation-bar {
+    width: 270px;
+    height: 100vh;
+    background-color: $transparent-dark-color;
+    position: absolute;
+
+    > ul {
+        flex-direction: column;
+
+        li:not(:first-child) {
+            margin: 1.3em 0 1.3em 0;
+            font-weight: 600;
+        }
+
+        .company-name {
+            width: 360px;
+            height: 90px;
+            margin-bottom: 2.5em;
+            align-self: flex-start;
+            background-color: #FEE252;
+        }
+    }
+}
+
+.app-navigation-bar, .user-info {
+    > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        > li {
+            > * {
+                color: $light-color;
+                color: red;
+                text-decoration: none;
+            }
+        }
+    }
+}

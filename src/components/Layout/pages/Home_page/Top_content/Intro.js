@@ -7,6 +7,7 @@ import Slide from "../../../../Slider/Slide";
 import ReadMore from "../../../../Read_more";
 import SliderNavigation from "../../../../Slider/Slider_navigation";
 import SlideIndicator from "../../../../Slider/Slide_indicator";
+import UserInfo from "../../../../Header/User_info";
 
 function Intro ({ currentSlideIndex, handleSlideChange }) {
     const [ currentSlide, setCurrentSlide ] = useState(null);
@@ -18,6 +19,7 @@ function Intro ({ currentSlideIndex, handleSlideChange }) {
     return (
         <section className="intro">
             <Container classNames={[ "intro__inner" ]}>
+                <UserInfo />
                 <Slide classNames={[ "intro__slide" ]}>
                     <h2 className="slide__title">{ currentSlide?.title }</h2>
                     <p className="slide__text">{ currentSlide?.text }</p>
