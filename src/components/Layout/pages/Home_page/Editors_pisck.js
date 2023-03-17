@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { sort } from "../../../../utilities/sort";
+import { editorsPickSlides } from "../../../../various_things/slides";
 import { cardTypes, SORT_BY_COUNTRY, SORT_BY_NAME, SORT_BY_TITLE } from "../../../../various_things/constants";
 
-import { editorsPickSlides } from "../../../../various_things/slides";
-import Card from "../../../Card/Card";
+import { useState } from "react";
 
+import Card from "../../../Card/Card";
 import Container from "../../../Container";
 import Slide from "../../../Slider/Slide";
 import SliderNavigation from "../../../Slider/Slider_navigation";
@@ -47,8 +48,7 @@ function EditorsPick () {
                 <Slide>
                     <Container classNames={[ "editors-pick__slide__inner" ]}>
                         {
-                            editorsPickSlides[currentSlideIndex]
-                            .cards
+                            sort(editorsPickSlides[currentSlideIndex].cards, sortCriteria)
                             .map((card) => 
                                 <Card card={ card } classNames={[ cardTypes.textInner ]} key={ `${ card.title }_${ card.text }` } />
                             )
