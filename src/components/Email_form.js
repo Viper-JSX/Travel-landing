@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function EmailForm ({ handleSubmit }) {
-    const [ form, setForm ] = useState({ ...formData });
+    const [ form, setForm ] = useState({ email: "" });
 
     function handleFormChange (event) {
         setForm({ ...form, [ event.target.name ]: event.target.value  });
@@ -9,9 +9,14 @@ function EmailForm ({ handleSubmit }) {
     }
 
     return (
-        <form className="subscribe-form" onSubmit={ () =>  handleSubmit(form) }>
+        <form className="subscribe-form" onSubmit={ (event) =>  {
+                event.preventDefault();
+                handleSubmit(form);
+            }
+        }>
             <input 
                 type="email" 
+                name="email"
                 value={ form.email } 
                 required 
                 placeholder="Your email" 
