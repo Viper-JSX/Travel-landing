@@ -2,13 +2,9 @@ import { useContext } from "react";
 import { UserContext } from "../../../../context/User_context";
 import EmailForm from "../../../Email_form";
 
-function Subscribe () {
+function Subscribe ({ handleEmailSubscribe }) {
     const user = useContext(UserContext);
 
-    function handleEmailFormSubmit ({ event, formData }) {
-        event.preventDefault();
-        console.log("Submit", formData);
-    }
     return (
         <section>
             <p className="subscribe-section__text">
@@ -19,7 +15,7 @@ function Subscribe () {
                 user.subscribedToEmail ? 
                 <p>You have already subscribed</p>
                 :
-                <EmailForm handleSubmit={ handleEmailFormSubmit } />
+                <EmailForm handleSubmit={ handleEmailSubscribe } />
             }   
         </section>
     );

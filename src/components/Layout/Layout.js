@@ -8,13 +8,13 @@ import Explore from "./pages/Explore_page/Explore_page";
 import Help from "./pages/Help_page/Help_page";
 import Header from "../Header/Header";
 
-function Layout () {
+function Layout ({ handleEmailSubscribe }) {
     return (
         <div className="Layout">
             <Header />
 
             <Routes>
-                <Route path="/" element={ <HomePage /> } />
+                <Route path="/" element={ <HomePage handleEmailSubscribe={ handleEmailSubscribe } /> } />
                 <Route path="/recommendation" element={ <Recommendation /> } />
                 <Route path="/explore" element={ <Explore /> } />
                 <Route path="/help" element={ <Help /> } />
