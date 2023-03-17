@@ -1,3 +1,5 @@
+import { mountainCollectionsCards } from "../../../../various_things/cards";
+import Card from "../../../Card/Card";
 import Container from "../../../Container";
 
 function MountainCollections () {
@@ -11,7 +13,9 @@ function MountainCollections () {
             </Container>
 
             <Container classNames={[ "mountain-collections__cards" ]}>
-                
+                {
+                    mountainCollectionsCards.map((card) => <Card card={ card } classNames={[ "landscape" ]} />)
+                }
             </Container>
         </section>
     );
