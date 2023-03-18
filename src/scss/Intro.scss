@@ -10,7 +10,20 @@
 
 .intro__slide {
     height: 100vh;
+    padding-left: 27%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .slide__content-container {
+        width: 320px;
+
+        .title {
+            font-size: 3.1em;
+            font-size: 3.3em;
+        }
+    }
 
     img {
         width: 100%;
@@ -19,5 +32,32 @@
         top: 0;
         left: 0;
         z-index: -1;
+    }
+}
+
+.user-info {
+     margin-right: 19.5%;
+    padding: 40px 0 40px 0;
+    align-self: flex-end;
+
+    > ul {
+        > li {
+            padding: 0 10px 0 10px;
+
+            &:last-child {
+                border-left: 2px solid black;
+            }
+        }
+    }
+}
+
+.icon-container {
+    background-color: blue;
+}
+
+.icon-container {
+    img {
+        width: 20px;
+        height: 20px;
     }
 }

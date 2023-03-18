@@ -8,20 +8,37 @@
     background-color: $transparent-dark-color;
     position: absolute;
 
+    .navigation__items {
+        padding: 62px 50px 62px 50px;
+        background-color: red;
+        
+        li {
+            margin: 1.5em 0 1.5em 0;
+            font-weight: 600;
+        }
+    }
+
     > ul {
         flex-direction: column;
 
-        li:not(:first-child) {
-            margin: 1.3em 0 1.3em 0;
-            font-weight: 600;
+        li {
+             > * {
+                color: $light-color;
+                text-decoration: none;
+             }
         }
 
         .company-name {
             width: 360px;
-            height: 90px;
-            margin-bottom: 2.5em;
-            align-self: flex-start;
+            min-height: 90px;
+            padding: 1.1em 2.4em 1.1em 2.4em;
             background-color: #FEE252;
+            font-size: 1.5em;
+            font-weight: 900;
+
+            > * {
+                color: $dark-color;
+            }
         }
     }
 }
@@ -32,13 +49,5 @@
         padding: 0;
         list-style: none;
         display: flex;
-
-        > li {
-            > * {
-                color: $light-color;
-                color: red;
-                text-decoration: none;
-            }
-        }
     }
 }

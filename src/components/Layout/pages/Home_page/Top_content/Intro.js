@@ -19,17 +19,20 @@ function Intro ({ currentSlideIndex, handleSlideChange }) {
     return (
         <section className="intro">
             <Container classNames={[ "intro__inner" ]}>
-                <UserInfo />
                 <Slide classNames={[ "intro__slide" ]}>
-                    <h2 className="slide__title">{ currentSlide?.title }</h2>
-                    <p className="slide__text">{ currentSlide?.text }</p>
+                    <UserInfo />
+                    <Container classNames={[ "slide__content-container" ]}>
+                        <h2 className="title">{ currentSlide?.title }</h2>
+                        <p className="text text-small text-bold">{ currentSlide?.text }</p>
+                        {
+                            currentSlide?.readMore ?
+                            <ReadMore to={ currentSlide.readMore } />
+                            :
+                            null    
+                        }
+                    </Container>
+
                     <img className="slide__image" src={ currentSlide?.imgUrl } alt="Slide image" />
-                    {
-                        currentSlide?.readMore ?
-                        <ReadMore to={ currentSlide.readMore } />
-                        :
-                        null    
-                    }
 
                     <Container classNames={[ "slider-navigation-wrapper" ]}>
                         <SliderNavigation 
