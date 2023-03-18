@@ -18,9 +18,14 @@
 
     .slide__content-container {
         width: 320px;
+        margin-top: -100px;
+
+        * {
+            margin: 2.5em 0 2.5em 0;
+        }
 
         .title {
-            font-size: 3.1em;
+            margin: 0;
             font-size: 3.3em;
         }
     }
@@ -53,9 +58,6 @@
 }
 
 .icon-container {
-    background-color: blue;
-    display: none;
-
     img {
         width: 20px;
         height: 20px;

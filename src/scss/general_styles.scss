@@ -33,3 +33,14 @@ body{
 .quote__text {
     font-style: italic;
 }
+
+.read-more.text {
+
+}
+
+.read-more.button button {
+    min-width: 8rem;
+    height: 2.4rem;
+    background-color: $highlight-color;
+    border-radius: 2em;
+}
