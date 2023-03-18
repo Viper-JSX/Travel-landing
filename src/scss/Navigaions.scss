@@ -7,13 +7,13 @@
     height: 100vh;
     background-color: $transparent-dark-color;
     position: absolute;
+    z-index: 2;
 
     .navigation__items {
-        padding: 62px 50px 62px 50px;
-        background-color: red;
+        padding: 55px 60px 62px 60px;
         
         li {
-            margin: 1.5em 0 1.5em 0;
+            margin: 2.2em 0 0 0;
             font-weight: 600;
         }
     }
@@ -25,6 +25,18 @@
              > * {
                 color: $light-color;
                 text-decoration: none;
+
+                &.active {
+                    background-color: $transparent-dark-color;
+                }
+             }
+
+            &:hover {
+                background-color: $transparent-dark-color;
+            }
+
+             &:last-child {
+                margin-top: 60px;
              }
         }
 
