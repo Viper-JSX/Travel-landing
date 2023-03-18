@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleLeft, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import SlideIndicator from "./Slide_indicator";
 
 function SliderNavigation ({ currentSlideIndex, lastSlideIndex, totalSlidesCount, handleSlideChange }) {
@@ -25,8 +27,12 @@ function SliderNavigation ({ currentSlideIndex, lastSlideIndex, totalSlidesCount
     
     return (
         <div className="slider__navigation">   
-            <button className="btn-prev" onClick={ handlePrevSlide } >{ "<" }</button>
-            <button className="btn-next" onClick={ handleNextSlide } >{ ">" }</button>
+            <button className="btn-prev" onClick={ handlePrevSlide } >
+                <FontAwesomeIcon icon={ faChevronLeft } />
+            </button>
+            <button className="btn-next" onClick={ handleNextSlide } >
+                <FontAwesomeIcon icon={ faChevronRight } />
+            </button>
         </div>
     );
 }

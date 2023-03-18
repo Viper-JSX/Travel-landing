@@ -41,6 +41,9 @@ function Intro ({ currentSlideIndex, handleSlideChange }) {
                             totalSlidesCount={ introSlides.length }
                             handleSlideChange={ handleSlideChange }
                         />
+
+                        <span className="text-small text-bold" style={{ fontSize: "13px" }} >Outdors edition</span>
+
                         <SlideIndicator 
                             currentSlideIndex={ currentSlideIndex }
                             totalSlidesCount={ introSlides.length }
