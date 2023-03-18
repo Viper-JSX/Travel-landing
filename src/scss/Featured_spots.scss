@@ -2,13 +2,23 @@
     width: 100%;
     padding: 12.5% 9% 12.5% 9%;
     display: flex;
-    flex-direction: column;
 }
 
-.featured-spots__cards-container {
-    width: 100%;
-    justify-content: space-around;
+
+
+//.featured-spots__cards-container {
+//    width: 100%;
+//    justify-content: space-around;
+//    display: flex;
+//}
+
+.featured-spots__text {
+    width: 200px;
+}
+
+.featured-spots__inner {
     display: flex;
+    flex-direction: column;
 }
 
 .featured-spots__cards {
@@ -41,4 +51,8 @@
 
 .features-spots__text .text {
     line-height: 21px;
+}
+
+.featured-spots__slide-indicator-container {
+    display: flex;
 }

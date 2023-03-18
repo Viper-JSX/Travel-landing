@@ -15,15 +15,14 @@ function FeaturedSpots ({ currentSlideIndex, totalSlidesCount }) {
 
     return (
         <section className="featured-spots">
-
-            <Container classNames={[ "featured-spots__cards-container" ]}>
-                <div className="text-with-title features-spots__text">
+                <Container classNames={[ "text-with-title", "featured-spots__text"]}>
                     <h2 className="title">Featured Spots</h2>
                     <p className="text text-small text-bold">Some of the featured spots that you will might want to visit before you die</p>
                     <b onClick={ handleShowAllPlaces }>--- View all</b>
-                </div>
-                <Container classNames={[ "featured-spots__cards" ]}>
+                </Container>
 
+            <Container classNames={[ "featured-spots__inner" ]}>
+                <Container classNames={[ "featured-spots__cards" ]}>
                     {
                         featuresSpotsCards.slice(0, allPlacesShowed ? featuresSpotsCards.length : 3).map((card) => 
                         <Card 
@@ -34,12 +33,19 @@ function FeaturedSpots ({ currentSlideIndex, totalSlidesCount }) {
                         )
                     }
                 </Container>
+                
+                <Container classNames={[ "featured-spots__slide-indicator-container" ]}>
+                    <span>Outdors edition</span>
+                    <SlideIndicator
+                        currentSlideIndex={ currentSlideIndex }
+                        totalSlidesCount={ totalSlidesCount }
+                    />
+                </Container>
             </Container>
 
-            <SlideIndicator
-                currentSlideIndex={ currentSlideIndex }
-                totalSlidesCount={ totalSlidesCount }
-            />
+            {/* <Container classNames={[ "featured-spots__cards-container" ]}>
+            </Container> */}
+
         </section>
     );
 }
