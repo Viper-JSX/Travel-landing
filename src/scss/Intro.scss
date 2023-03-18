@@ -36,6 +36,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        // box-shadow: inset 20px 20px 20px 20px red;
         z-index: -1;
     }
 }
@@ -62,8 +63,4 @@
         width: 20px;
         height: 20px;
     }
-}
-
-.slider-navigation-wrapper {
-    display: none;
 }
