@@ -42,8 +42,8 @@
     height: 270px;
 }
 
-.features-spots__text {
-    width: 220px;
+.featured-spots__text {
+    width: 200px;
     margin-top: -8.3%;
     padding: 0 4.5em 0 0;//1em 1em 1em 1em;
     text-align: right;
@@ -51,6 +51,18 @@
 
 .features-spots__text .text {
     line-height: 21px;
+}
+
+
+.featured-spots__text .view-all {
+    margin-top: 8.7em;
+    font-size: 12px;
+    display: flex;    
+
+    hr {
+        width: 7vw;
+        height: 0;;
+    }
 }
 
 .featured-spots__slide-indicator-container {

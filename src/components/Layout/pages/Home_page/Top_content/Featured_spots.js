@@ -18,7 +18,10 @@ function FeaturedSpots ({ currentSlideIndex, totalSlidesCount }) {
                 <Container classNames={[ "text-with-title", "featured-spots__text"]}>
                     <h2 className="title">Featured Spots</h2>
                     <p className="text text-small text-bold">Some of the featured spots that you will might want to visit before you die</p>
-                    <b onClick={ handleShowAllPlaces }>--- View all</b>
+                    <b className="view-all" onClick={ handleShowAllPlaces }>
+                        <hr />
+                        View all
+                    </b>
                 </Container>
 
             <Container classNames={[ "featured-spots__inner" ]}>
