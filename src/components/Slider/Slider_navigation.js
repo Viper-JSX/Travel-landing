@@ -25,8 +25,8 @@ function SliderNavigation ({ currentSlideIndex, lastSlideIndex, totalSlidesCount
     
     return (
         <div className="slider__navigation">   
-            <button className="arrow-prev" onClick={ handlePrevSlide } >{ "<" }</button>
-            <button className="arrow-next" onClick={ handleNextSlide } >{ ">" }</button>
+            <button className="btn-prev" onClick={ handlePrevSlide } >{ "<" }</button>
+            <button className="btn-next" onClick={ handleNextSlide } >{ ">" }</button>
         </div>
     );
 }
