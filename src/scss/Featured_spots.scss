@@ -2,6 +2,8 @@
     width: 100%;
     padding: 12.5% 9% 12.5% 9%;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
@@ -19,26 +21,40 @@
 .featured-spots__inner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .featured-spots__cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-grow: 1;
+    column-gap: 3em;
 }
 
-.featured-spots__cards .card {
-    width: 270px;
+.featured-spots__cards {
+    .card {
+        width: 270px;
+    }
 }
 
-.featured-spots__cards .card h2 {
-    margin: 0;
-    padding: 2em 0 0em 0;
-}
+.featured-spots__cards {
+    .card {
+        h2 {
+            margin: 0;
+            padding: 2em 0 0em 0;
+        }
+
+        .text {
+            margin-top: 2.2em;
+            font-size: 12px
+        }
+    }
+} 
 
 .featured-spots__cards .card img {
     width: 100%;
-    min-width: 270px; //maybe remove
+    // min-width: 270px; //maybe remove
     height: 270px;
 }
 
