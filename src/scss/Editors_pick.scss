@@ -1,5 +1,26 @@
 .editors-pick {
-    display: flex
+    padding: 5em 0 5em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.editors-pick__text {
+    width: 12%;
+    min-width: 170px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    h2 {
+        width: 120px;
+        text-align: right;
+        background-color: red;
+    }
+}
+
+.editors-pick__slide-container {
+    width: 67%;
 }
 
 .editors-pick__slide__inner {

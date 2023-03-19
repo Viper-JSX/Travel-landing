@@ -30,7 +30,7 @@ function EditorsPick () {
                 <p className="text text-small text-bold">Our picks, just for you nam an vidisse admodum omittantur nihli corrumpit</p>
             </Container>
 
-            <Container classNames={[ "editor-pick__slide-container" ]} >
+            <Container classNames={[ "editors-pick__slide-container" ]} >
                 <SliderNavigation 
                     currentSlideIndex={ currentSlideIndex } 
                     totalSlidesCount={ editorsPickSlides.length }
