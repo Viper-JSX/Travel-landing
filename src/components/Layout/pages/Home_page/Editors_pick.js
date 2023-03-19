@@ -1,6 +1,6 @@
 import { sort } from "../../../../utilities/sort";
 import { editorsPickSlides } from "../../../../various_things/slides";
-import { cardTypes, SORT_BY_COUNTRY, SORT_BY_NAME, SORT_BY_TITLE } from "../../../../various_things/constants";
+import { cardTypes, DO_NOT_SORT, SORT_BY_COUNTRY, SORT_BY_NAME, SORT_BY_TITLE } from "../../../../various_things/constants";
 
 import { useState } from "react";
 
@@ -11,9 +11,11 @@ import SliderNavigation from "../../../Slider/Slider_navigation";
 import SortBy from "../../../SortBy";
 
 function EditorsPick () {
-    const sortCriterias = [ SORT_BY_TITLE, SORT_BY_COUNTRY ];
+    const sortCriterias = [ DO_NOT_SORT, SORT_BY_TITLE, SORT_BY_COUNTRY ];
     const [ currentSlideIndex, setCurrentSlideIndex ] = useState(0);
     const [ sortCriteria, setSortCriteria ] = useState(sortCriterias[0]);
+
+    console.log(editorsPickSlides)
 
     function handleSortCriteriaChange ({ criteria }) {
         setSortCriteria(criteria);

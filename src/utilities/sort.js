@@ -1,9 +1,13 @@
-import { SORT_BY_COUNTRY, SORT_BY_NAME, SORT_BY_TITLE } from "../various_things/constants";
+import { DO_NOT_SORT, SORT_BY_COUNTRY, SORT_BY_NAME, SORT_BY_TITLE } from "../various_things/constants";
 
 function sort (array, sortCriteria=SORT_BY_TITLE, order=1) {
     let sorted = [...array];
 
     switch (sortCriteria) {
+        case DO_NOT_SORT: {
+            return sorted;
+        }
+
         case SORT_BY_NAME: {
             sorted.sort((a, b) => {
                 return (
