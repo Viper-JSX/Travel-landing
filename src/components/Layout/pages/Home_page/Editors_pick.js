@@ -49,7 +49,7 @@ function EditorsPick () {
                         sortCriterias={ sortCriterias }
                         handleSortCriteriaChange={ handleSortCriteriaChange }
                     />
-                <hr />
+                    <hr />
                 </Container>
 
                 <Slide>

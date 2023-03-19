@@ -3,6 +3,14 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    .slider-navigation-wrapper {
+        margin-bottom: 30px;
+
+        > hr {
+            width: 30px;
+        }
+    }
 }
 
 .editors-pick__text {
