@@ -37,7 +37,7 @@ function FeaturedSpots ({ currentSlideIndex, totalSlidesCount }) {
                     }
                 </Container>
                 
-                <Container classNames={[ "featured-spots__slide-indicator-container" ]}>
+                <Container classNames={[ "featured-spots__slide-indicator-container slide-indicator-container" ]}>
                     <span>Outdors edition</span>
                     <SlideIndicator
                         currentSlideIndex={ currentSlideIndex }
