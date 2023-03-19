@@ -1,14 +1,20 @@
 .above-the-sea {
+    padding: 3em 0 3em 0;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
     column-gap: 8em;
+    row-gap: 3em;
+    justify-content: flex-end;
 }
 
 .above-the-sea-image-container {
     width: 41.5vw;  
+    height: 41.5vw;
     min-width: 300px;
     max-width: 600px;
-    aspect-ratio: 1/1;
+    min-height: 300px;
+    max-height: 600px;
 
     > img {
         width: 100%;
@@ -22,6 +28,7 @@
 
     h1 {
         width: 50%;
+        margin-top: 0;
         font-size: 52px;
     }
 

@@ -4,10 +4,6 @@ import ReadMore from "../../../Read_more";
 function AboveTheSea () {
     return (
         <section className="above-the-sea">
-            <Container classNames={[ "above-the-sea-image-container" ]}>
-                <img src="https://media.cntraveler.com/photos/5798c04651b1fe8b3ce4dbfe/master/pass/mag-tommy-clarke-water-1.jpg" alt="Sea image" />
-            </Container>
-
             <Container classNames={[ "above-the-sea-text" ]}>
                 <h1 className="title">Above The Sea</h1>
                 <blockquote className="quote">
@@ -26,6 +22,11 @@ function AboveTheSea () {
 
                 <ReadMore to="https://www.cntraveler.com/galleries/2016-07-31/water-colors-8-beautiful-photos-of-oceans-from-above" />
             </Container>
+
+            <Container classNames={[ "above-the-sea-image-container" ]}>
+                <img src="https://media.cntraveler.com/photos/5798c04651b1fe8b3ce4dbfe/master/pass/mag-tommy-clarke-water-1.jpg" alt="Sea image" />
+            </Container>
+
         </section>
     );
 }
