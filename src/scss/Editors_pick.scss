@@ -25,13 +25,14 @@
 }
 
 .editors-pick__slide__inner {
-    max-width: 920px;
+    max-width: 70vw;
+    height: 70vw;
     min-width: 300px;
+    min-height: 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 40px;
-    aspect-ratio: 1/1;
 
     background-color: red;
 
@@ -49,6 +50,7 @@
         background-color: green;
         width: 100%;
         height: 100%;
+
         img {
             width: 100%;
             height: 100%

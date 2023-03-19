@@ -9,6 +9,7 @@ import Container from "../../../Container";
 import Slide from "../../../Slider/Slide";
 import SliderNavigation from "../../../Slider/Slider_navigation";
 import SortBy from "../../../SortBy";
+import SlideIndicator from "../../../Slider/Slide_indicator";
 
 function EditorsPick () {
     const sortCriterias = [ DO_NOT_SORT, SORT_BY_TITLE, SORT_BY_COUNTRY ];
@@ -33,17 +34,23 @@ function EditorsPick () {
             </Container>
 
             <Container classNames={[ "editors-pick__slide-container" ]} >
-                <SliderNavigation 
-                    currentSlideIndex={ currentSlideIndex } 
-                    totalSlidesCount={ editorsPickSlides.length }
-                    lastSlideIndex={ editorsPickSlides.length - 1 } 
-                    handleSlideChange={ handleSlideChange }
-                />
-                <SortBy
-                    currentCriteria={ sortCriteria }
-                    sortCriterias={ sortCriterias }
-                    handleSortCriteriaChange={ handleSortCriteriaChange }
-                />
+                <Container classNames={[ "slider-navigation-wrapper" ]}>
+                    <SliderNavigation 
+                        currentSlideIndex={ currentSlideIndex } 
+                        totalSlidesCount={ editorsPickSlides.length }
+                        lastSlideIndex={ editorsPickSlides.length - 1 } 
+                        handleSlideChange={ handleSlideChange }
+                    />
+
+                    <SlideIndicator currentSlideIndex={ currentSlideIndex } totalSlidesCount={ editorsPickSlides.length } />
+
+                    <SortBy
+                        currentCriteria={ sortCriteria }
+                        sortCriterias={ sortCriterias }
+                        handleSortCriteriaChange={ handleSortCriteriaChange }
+                    />
+                <hr />
+                </Container>
 
                 <Slide>
                     <Container classNames={[ "editors-pick__slide__inner" ]}>
