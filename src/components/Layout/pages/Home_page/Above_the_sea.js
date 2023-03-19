@@ -7,9 +7,9 @@ function AboveTheSea () {
             <Container classNames={[ "above-the-sea-text" ]}>
                 <h1 className="title">Above The Sea</h1>
                 <blockquote className="quote">
-                    <p className="text quote__text">
-                        Ad lorem aliquid laoreet pri, possim iisque ad vim. Te graecis maluisset eum
-                    </p>
+                    <span className="text quote__text">
+                        Eros reque munere ut quo, commodo ullamcorper ad eam. His aesterno scriptorem ei, sea ut epicuri tincidunt
+                    </span>
                 </blockquote>
 
                 <p className="text text-small text-bold">
