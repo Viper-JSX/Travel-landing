@@ -16,8 +16,8 @@
     }
 
     &.text-inner {
-        width: 320px; //temporary
-        height: 320px;
+        // width: 320px; //temporary
+        // height: 320px;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -41,6 +41,7 @@
             opacity: 0;
             position: relative;
             transition: 0.3s;
+            overflow-y: auto;
             z-index: 1;
         }
     }

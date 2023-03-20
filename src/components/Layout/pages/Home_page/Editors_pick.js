@@ -44,12 +44,15 @@ function EditorsPick () {
 
                     <SlideIndicator currentSlideIndex={ currentSlideIndex } totalSlidesCount={ editorsPickSlides.length } />
 
-                    <SortBy
-                        currentCriteria={ sortCriteria }
-                        sortCriterias={ sortCriterias }
-                        handleSortCriteriaChange={ handleSortCriteriaChange }
-                    />
-                    <hr />
+                    <Container>
+                        <SortBy
+                            currentCriteria={ sortCriteria }
+                            sortCriterias={ sortCriterias }
+                            handleSortCriteriaChange={ handleSortCriteriaChange }
+                        />
+                        <hr />
+                    </Container>
+                    
                 </Container>
 
                 <Slide>

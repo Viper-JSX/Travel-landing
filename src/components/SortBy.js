@@ -2,7 +2,7 @@ import { DO_NOT_SORT, SORT_BY_NAME, SORT_BY_TITLE } from "../various_things/cons
 
 function SortBy ({ currentCriteria, sortCriterias, handleSortCriteriaChange }) {
     return (    
-        <select value={ currentCriteria } onChange={ (event) => handleSortCriteriaChange({ criteria: event.target.value }) }>
+        <select className="sort-by" value={ currentCriteria } onChange={ (event) => handleSortCriteriaChange({ criteria: event.target.value }) }>
             {
                 sortCriterias.map((criteria) => {
                     let criteriaName;
