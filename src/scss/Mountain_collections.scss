@@ -1,18 +1,25 @@
 .mountain-collections {
+    padding: 7% 0 7% 0;
     display: flex;
     justify-content: center;
-    background-color: red;
+
 }
 
 .mountain-collections__inner {
-    margin-left: 5%;
-    background-color: green;
+
+
 }
 
 .mountain-collections__text {
-    width: 300px;
+    width: 40%;
+    min-width: 300px;
+    h1 {
+        font-size: 3em;
+    }
 }
 
 .mountain-collections__cards {
+    .card {
 
+    }
 }

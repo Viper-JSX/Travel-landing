@@ -12,7 +12,7 @@ function Card ({ card={}, classNames=[] }) {
                 <h2 className="card__title">{ card.title }</h2>
                 {
                     card.country ? 
-                    <b className="contry-text">{card.country}</b>
+                    <b className="country-text">{card.country}</b>
                     :
                     null                
                 }
