@@ -8,6 +8,15 @@
             margin: 0;
             padding: 2em 0 0 0;
         }
+
+        .read-more.button {
+            display: inline-block;
+            margin-top: 2em;
+        }
+
+        .read-more.button {
+            border-bottom: none;
+        }
     }
 
     &.landscape {
@@ -59,9 +68,5 @@
             overflow-y: auto;
             z-index: 1;
         }
-    }
-
-    .read-more {
-
     }
 }

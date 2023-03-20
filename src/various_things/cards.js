@@ -65,7 +65,7 @@ const mountainCollectionsCards = [
     {
         title: "Nothern Mountain",
         text: [
-            "Loremm ipsu dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "Lorem ipsum dolor sit amet, te eam oratio imperdiet, nam an vidisse admodum omittantur, nihil corrumpit‘an cum. Cu iriure dignissim consequat quo, usu id ceteros ponderum. Ea vel malis ludico quod, ex namerror suscipit prodesset. Qui an deserunt imperdiet. Case temporibus qui ut.",
             "Lorem ipsu dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
         ],
         imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",
@@ -76,7 +76,7 @@ const mountainCollectionsCards = [
     {
         title: "Estern Mountain",
         text: [
-            "Loremm ipsu dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+            "Lorem ipsum dolor sit amet, te eam oratio imperdiet, nam an vidisse admodum omittantur, nihil corrumpit‘an cum. Cu iriure dignissim consequat quo, usu id ceteros ponderum. Ea vel malis ludico quod, ex namerror suscipit prodesset. Qui an deserunt imperdiet. Case temporibus qui ut.",
             "Lorem ipsu dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
         ],
         imgUrl: "https://www.outsideonline.com/wp-content/uploads/2018/11/20/outside-guide-grand-canyon_h.jpg",

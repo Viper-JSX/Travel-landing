@@ -6,6 +6,7 @@
 }
 
 .mountain-collections__inner {
+    margin-right: 8%;
     padding-left: 19%;
     background-color: red;
 }
@@ -24,13 +25,21 @@
 
 .mountain-collections__cards {
     margin: 5.2% 0 0 0;
+    border-bottom: 2px solid $border-color;
+    
+    
     .card {
-        margin: 0 !important;
-        padding: 0 !important;
-        border-bottom: 2px solid white;
+        align-items: flex-end;
+        padding: 0em 0 5em 0;
+        border-bottom: 2px solid $border-color;
+
+        &:last-child {
+            border-bottom: none;
+        }
 
         img {
-            min-width: 300px;
+            min-width: 270px;
+            min-height: 270px;
         }
     }
 }
