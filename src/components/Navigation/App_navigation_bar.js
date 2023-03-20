@@ -2,9 +2,11 @@ import Container from "../Container";
 import Navigation from "./Navigation";
 import NavigationItem from "./Navigation_item";
 
-function AppNavigationBar () {
+function AppNavigationBar ({ visible }) {
+    
+
     return (
-        <Navigation classNames={[ "app-navigation-bar" ]}>
+        <Navigation classNames={[ "app-navigation-bar", visible ? "visible" : "hidden" ]}>
             <NavigationItem to="/" classNames={[ "company-name" ]}>trppd__</NavigationItem>
             <Container classNames={[ "navigation__items" ]}>
                 <NavigationItem to="/">Home</NavigationItem>

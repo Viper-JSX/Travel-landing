@@ -3,7 +3,13 @@
     height: 100vh;
     background-color: $transparent-dark-color;
     position: absolute;
+    transition: 0.5s;
+    overflow-x: hidden;
     z-index: 2;
+
+    &.hidden {
+        width: 0;
+    }
 
     .navigation__items {
         padding: 55px 60px 62px 60px;
@@ -63,7 +69,17 @@
 .navigation-toggle {
     width: 30px;
     height: 30px;
+    padding: 2px;
     color: $dark-color;
     background-color: $highlight-color;
-    font-size: 40px;
+
+    &:hover {
+        color: $light-color;
+        background-color: $dark-color;
+    }
+
+    > * {
+        width: 100%;
+        height: 100%;
+    }
 }

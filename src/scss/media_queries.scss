@@ -8,7 +8,11 @@
     }
 
     .app-navigation-bar {
-        display: none;
+        width: 100vw;
+        background-color: $dark-color;
+        .company-name {
+            width: 100%;
+        }
     }
 
     .intro__slide {
@@ -17,7 +21,7 @@
         text-align: center;
 
         .user-info {
-            margin-right: 0;
+            margin: 20px 0 20px 0;
             align-self: center;
         }
 
