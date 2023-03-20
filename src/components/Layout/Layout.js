@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router";
 
+import NavigationToggle from "../Navigation/Navigation_toggle";
 import AppNavigationBar from "../Navigation/App_navigation_bar";
 import HomePage from "./pages/Home_page/Home_page";
 import NotFound from "./pages/Not_found_page/Not_found_page";
@@ -9,12 +10,13 @@ import Explore from "./pages/Explore_page/Explore_page";
 import Help from "./pages/Help_page/Help_page";
 import Header from "../Header/Header";
 
-function Layout ({ handleEmailSubscribe }) {
+function Layout ({ appNavigationVisible, handleEmailSubscribe, handleAppNavigationToggle }) {
+    console.log(appNavigationVisible)
     return (
         <div className="Layout">
             <Header />
-
-            <AppNavigationBar />
+            <NavigationToggle isToggled={ appNavigationVisible } handleToggle={ handleAppNavigationToggle } />
+            <AppNavigationBar visible={ appNavigationVisible } />
 
             <Routes>
                 <Route path="/" element={ <HomePage handleEmailSubscribe={ handleEmailSubscribe } /> } />

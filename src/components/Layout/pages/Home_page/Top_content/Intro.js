@@ -8,20 +8,17 @@ import ReadMore from "../../../../Read_more";
 import SliderNavigation from "../../../../Slider/Slider_navigation";
 import SlideIndicator from "../../../../Slider/Slide_indicator";
 import UserInfo from "../../../../Header/User_info";
-import NavigationToggle from "../../../../Navigation/Navigation_toggle";
 
 function Intro ({ currentSlideIndex, handleSlideChange }) {
     const [ currentSlide, setCurrentSlide ] = useState(null);
-    const [ navigationToggled, setNavigationToggled ] = useState(false);
 
     useEffect(() => {
         setCurrentSlide(introSlides[currentSlideIndex]);
     }, [currentSlideIndex]);
 
+
     return (
         <section className="intro">
-            <NavigationToggle isToggled={ navigationToggled } />
-
             <Container classNames={[ "intro__inner" ]}>
                 <Slide classNames={[ "intro__slide" ]}>
                     <UserInfo />

@@ -6,6 +6,11 @@ import { UserContext } from "./context/User_context";
 
 function App(){
     const [ user, setUser ] = useState({ subscribedToEmail: false, email: "" });
+    const [ appNavigationVisible, setAppNavigationVisible ] = useState(false);
+    
+    function handleAppNavigationToggle () {
+        setAppNavigationVisible(!appNavigationVisible);
+    }
 
     function handleEmailSubscribe ({ email }) {
         setUser({ ...user, subscribedToEmail: true, email });
@@ -15,6 +20,8 @@ function App(){
         <div>
             <UserContext.Provider value={ user }>
                 <Layout 
+                    appNavigationVisible={ appNavigationVisible }
+                    handleAppNavigationToggle={ handleAppNavigationToggle }
                     handleEmailSubscribe={ handleEmailSubscribe }
                 />
             </UserContext.Provider>
