@@ -1,4 +1,5 @@
 import { mountainCollectionsCards } from "../../../../various_things/cards";
+import { BUTTON } from "../../../../various_things/constants";
 import Card from "../../../Card/Card";
 import Container from "../../../Container";
 
@@ -15,7 +16,7 @@ function MountainCollections () {
 
                 <Container classNames={[ "mountain-collections__cards" ]}>
                     {
-                        mountainCollectionsCards.map((card) => <Card card={ card } classNames={[ "landscape" ]} key={ `${ card.title }_${ card.text }` } />)
+                        mountainCollectionsCards.map((card) => <Card card={ card } classNames={[ "landscape" ]} readMoreButtonType={ BUTTON } key={ `${ card.title }_${ card.text }` } />)
                     }
                 </Container>
             </Container>
