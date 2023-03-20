@@ -8,7 +8,7 @@ function EmailForm ({ handleSubmit }) {
     }
 
     return (
-        <form className="subscribe-form" onSubmit={ (event) =>  handleSubmit({ event, formData: form }) }>
+        <form className="email-form" onSubmit={ (event) =>  handleSubmit({ event, formData: form }) }>
             <input 
                 type="email" 
                 name="email"

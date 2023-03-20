@@ -1,0 +1,19 @@
+.subscribe-section {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .subscribe-section__inner {
+        text-align: center;
+    
+        .text {
+            font-size: 0.75em;
+        }
+
+        .email-form {
+            padding: 5em;
+        }
+    }
+}
