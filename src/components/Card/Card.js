@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { TEXT } from "../../various_things/constants";
 import Container from "../Container";
 import ReadMore from "../Read_more";
