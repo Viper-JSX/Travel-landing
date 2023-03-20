@@ -1,6 +1,9 @@
 .intro {
     min-height: 100vh;
 
+    .navigation-toggle {
+        position: absolute;
+    }
 }
 
 .intro h2 {

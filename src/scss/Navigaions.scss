@@ -1,8 +1,4 @@
 .app-navigation-bar {
-
-}
-
-.app-navigation-bar {
     width: 270px;
     height: 100vh;
     background-color: $transparent-dark-color;
@@ -62,4 +58,12 @@
         list-style: none;
         display: flex;
     }
+}
+
+.navigation-toggle {
+    width: 30px;
+    height: 30px;
+    color: $dark-color;
+    background-color: $highlight-color;
+    font-size: 40px;
 }
