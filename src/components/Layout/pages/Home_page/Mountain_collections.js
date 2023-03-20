@@ -8,7 +8,7 @@ function MountainCollections () {
             <Container classNames={[ "mountain-collections__inner" ]}>   
                 <Container classNames={[ "mountain-collections__text" ]}>
                     <h1>Mountain collections</h1>
-                    <p>
+                    <p className="text text-small text-bold">
                         See our best mountain collections, explore and Lorem impus dolor sit amet, te eam oratio imperdiet, nam an vidisse admodum omittantur, nihil corrumpit an cum.
                     </p>
                 </Container>

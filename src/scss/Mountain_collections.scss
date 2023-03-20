@@ -1,5 +1,5 @@
 .mountain-collections {
-    padding: 5.5% 8% 5.5% 19%;
+    padding: 4% 8% 5.5% 19%;
     display: flex;
     justify-content: center;
 
@@ -10,10 +10,15 @@
 }
 
 .mountain-collections__text {
-    width: 40%;
+    // width: 40%;
     min-width: 300px;
-    h1 {
-        font-size: 3em;
+    > h1 {
+        font-size: 3.5em;
+        margin-bottom: 0.5em;
+    }
+    > .text {
+        width: 35%;
+        min-width: 300px;
     }
 }
 
