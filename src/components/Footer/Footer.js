@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 function Footer () {
     return (
         <footer>
-            <b>trppd__</b>
-            <b>&copy; 2017-2018</b>
+            <b className="company-name">trppd__</b>
+            <b className="copy">&copy; 2017-2018</b>
             <Container classNames={[ "footer__social-media" ]}>
                 <Link to="https://www.instagram.com/" target="_blank">
                     <FontAwesomeIcon icon={ faInstagram } />
