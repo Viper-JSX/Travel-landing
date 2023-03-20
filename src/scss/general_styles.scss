@@ -48,3 +48,8 @@ blockquote {
     background-color: $highlight-color;
     border-radius: 2em;
 }
+
+.read-more.text {
+    color: $highlight-color;
+    text-decoration: none;
+}
