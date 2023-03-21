@@ -2,7 +2,7 @@ function SlideIndicator ({ currentSlideIndex, totalSlidesCount }) {
     return (
         <div className="slide-indicator">
             <hr />
-            {currentSlideIndex + 1} / {totalSlidesCount}
+            <span className="count" >{ currentSlideIndex + 1} / {totalSlidesCount }</span>
             <hr />
         </div>
     );
