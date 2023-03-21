@@ -24,7 +24,6 @@ function App(){
         else {
             setAppNavigationVisible(false);
         }
-        console.log(window.innerWidth)
     }
 
     window.addEventListener("resize", handleResize);
