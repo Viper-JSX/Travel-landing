@@ -4,6 +4,7 @@ footer {
     color: $dark-color;
     background-color: $highlight-color;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     .company-name {

@@ -46,7 +46,6 @@
 
 .featured-spots__cards .card img {
     width: 100%;
-    // min-width: 270px; //maybe remove
     height: 270px;
 }
 
@@ -62,17 +61,19 @@
 }
 
 
-.featured-spots__text .view-all {
-    margin-top: 8.7em;
-    margin-bottom: 5em;
-    font-size: 12px;
-    display: flex;    
+.featured-spots__text {
+    .view-all {
+        margin-bottom: 5em;
+        font-size: 12px;
+        display: flex;    
+        margin-top: 8.7em;
 
-    hr {
-        width: 7vw;
-        height: 0;;
+        hr {
+            width: 7vw;
+            height: 0;
+        }
     }
-}
+}   
 
 .featured-spots__slide-indicator-container {
     display: flex;

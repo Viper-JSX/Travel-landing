@@ -39,7 +39,6 @@
     }
 
     .featured-spots {
-
         padding-left: 0.5em;
         padding-right: 0.5em;
         
@@ -77,8 +76,8 @@
     }
 
     .editors-pick {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
 
         .sort-by-container {
             hr {
@@ -114,6 +113,9 @@
     }
 
     .above-the-sea {
+        // *{
+        //     margin: 0;
+        // }
         justify-content: center;
 
         .above-the-sea-text {
