@@ -6,7 +6,7 @@ import Container from "../../../Container";
 function MountainCollections () {
     return (
         <section className="mountain-collections">
-            <Container classNames={[ "mountain-collections__inner" ]}>   
+            <Container classNames={[ "cards-container", "mountain-collections__inner" ]}>   
                 <Container classNames={[ "mountain-collections__text" ]}>
                     <h1>Mountain collections</h1>
                     <p className="text text-small text-bold">

@@ -32,7 +32,7 @@ function FeaturedSpots ({ currentSlideIndex, totalSlidesCount }) {
                 </Container>
 
             <Container classNames={[ "featured-spots__inner" ]}>
-                <Container classNames={[ "featured-spots__cards" ]}>
+                <Container classNames={[ "cards-container", "featured-spots__cards" ]}>
                     {
                         featuresSpotsCards.slice(0, allPlacesShowed ? featuresSpotsCards.length : 3).map((card) => 
                         <Card 
