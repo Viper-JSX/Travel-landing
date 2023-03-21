@@ -13,9 +13,7 @@
     .app-navigation-bar {
         width: 100vw;
         background-color: $dark-color;
-        .company-name {
-            width: 100%;
-        }
+        overflow-x: hidden;
     }
 
     .intro__slide {

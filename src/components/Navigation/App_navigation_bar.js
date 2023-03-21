@@ -3,11 +3,6 @@ import Navigation from "./Navigation";
 import NavigationItem from "./Navigation_item";
 
 function AppNavigationBar ({ visible }) {
-    const viewportWidth = window.innerWidth;
-    console.log(viewportWidth)
-
-    //const navigationState = ( viewportWidth <= 980 && !visible ) ? "hidden" : "visible"
-
     return (
         <Navigation classNames={[ "app-navigation-bar", visible ? "visible" : "hidden"]}>
             <NavigationItem to="/" classNames={[ "company-name" ]}>trppd__</NavigationItem>
