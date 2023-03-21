@@ -69,4 +69,20 @@
             }
         }
     }
+
+    .above-the-sea {
+        justify-content: center;
+
+        .above-the-sea-text {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .above-the-sea-image-container {
+            width: 80vw;
+            height: 80vw;
+        }
+    }
 }
