@@ -44,7 +44,7 @@ function EditorsPick () {
 
                     <SlideIndicator currentSlideIndex={ currentSlideIndex } totalSlidesCount={ editorsPickSlides.length } />
 
-                    <Container>
+                    <Container classNames={[ "sort-by-container" ]}>
                         <SortBy
                             currentCriteria={ sortCriteria }
                             sortCriterias={ sortCriterias }

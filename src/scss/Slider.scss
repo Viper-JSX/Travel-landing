@@ -28,7 +28,7 @@
     font-size: 0.9em;
 
     > * {
-        margin: 0 2em 0 2em;
+        margin: 0 1em 0 1em;
     }
 
     .count {
@@ -38,11 +38,10 @@
 
 
     hr {
-        max-width: 400px;   
+        max-width: 700px;   
         min-width: 50px;
         border-color: #5A5A5A5A;
         border: 1px solid rgb(128, 128, 128);
-        border-color: red;
 
         &:first-child {
             color: blue;
@@ -53,6 +52,12 @@
             width: 2vw;
             min-width: 30px;
         }
+    }
+}
+
+.sort-by-container {
+    .sort-by {
+        margin-right: 1em;
     }
 }
 

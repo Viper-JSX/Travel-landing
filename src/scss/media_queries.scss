@@ -39,6 +39,7 @@
     }
 
     .featured-spots {
+
         padding-left: 0.5em;
         padding-right: 0.5em;
         
@@ -79,10 +80,15 @@
         padding-left: 1em;
         padding-right: 1em;
 
+        .sort-by-container {
+            hr {
+                display: none;
+            }
+        }
+
         .editors-pick__text {
             align-items: center;
             text-align: center;
-            background-color: red;
 
             h2 {
                 width: 100%;
