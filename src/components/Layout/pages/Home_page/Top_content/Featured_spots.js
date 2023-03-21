@@ -9,8 +9,8 @@ import SlideIndicator from "../../../../Slider/Slide_indicator";
 function FeaturedSpots ({ currentSlideIndex, totalSlidesCount }) {
     const [ allPlacesShowed, setAllPlacesShowed ] = useState(false);
 
-    function handleShowAllPlaces () {
-        setAllPlacesShowed(true);
+    function handleAllPlacesToggle () {
+        setAllPlacesShowed(!allPlacesShowed);
     }
 
     return (
@@ -18,10 +18,17 @@ function FeaturedSpots ({ currentSlideIndex, totalSlidesCount }) {
                 <Container classNames={[ "text-with-title", "featured-spots__text"]}>
                     <h2 className="title">Featured Spots</h2>
                     <p className="text text-small text-bold">Some of the featured spots that you will might want to visit before you die</p>
-                    <b className="view-all" onClick={ handleShowAllPlaces }>
+                    
+
+                    <b className="view-all" onClick={ handleAllPlacesToggle }>
                         <hr />
-                        View all
-                    </b>
+                        {
+                            allPlacesShowed ? 
+                            "Hide"
+                            :
+                            "View all"
+                        }
+                    </b>   
                 </Container>
 
             <Container classNames={[ "featured-spots__inner" ]}>
