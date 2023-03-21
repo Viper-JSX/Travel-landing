@@ -12,7 +12,7 @@ function HomePage ({ handleEmailSubscribe }) {
             <AboveTheSea />
             <EditorsPick />
             <MountainCollections />
-            {/* <Subscribe handleEmailSubscribe={ handleEmailSubscribe } /> */}
+            <Subscribe handleEmailSubscribe={ handleEmailSubscribe } />
             <Footer />
         </div>
     );
