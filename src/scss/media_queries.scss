@@ -26,7 +26,6 @@
         }
 
         .slider-navigation-wrapper {
-            background-color: red; 
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap-reverse;
@@ -45,6 +44,22 @@
                 width: 20vw;
                 max-width: 140px;
                 min-width: 0;
+            }
+        }
+    }
+
+    .editors-pick__slide__inner {
+        height: max-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .card {
+            height: 70vw;
+            min-height: 280px;
+            img {
+                object-fit: cover;
             }
         }
     }
