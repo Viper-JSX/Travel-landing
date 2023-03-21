@@ -3,6 +3,12 @@
 // }
 
 @media screen and (max-width: 980px) {
+    .Layout {
+        .navigation-toggle {
+            display: block;
+        }
+    }
+ 
     header {
         
     }
