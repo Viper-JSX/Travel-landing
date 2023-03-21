@@ -16,6 +16,19 @@ function App(){
         setUser({ ...user, subscribedToEmail: true, email });
     }
 
+    function handleResize () {
+        if (window.innerWidth >= 980) {
+            setAppNavigationVisible(true);
+        }
+
+        else {
+            setAppNavigationVisible(false);
+        }
+        console.log(window.innerWidth)
+    }
+
+    window.addEventListener("resize", handleResize);
+
     return(
         <div>
             <UserContext.Provider value={ user }>

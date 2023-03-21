@@ -1,6 +1,9 @@
 .subscribe-section {
     min-height: 350px;
     padding: 2em;
+    background-image: url("../../public/files/images/map_dot.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
