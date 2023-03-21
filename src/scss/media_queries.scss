@@ -38,6 +38,11 @@
 
     }
 
+    .featured-spots__text {
+        padding: 0;
+        text-align: center;
+    }
+
         // .slide-indicator {
         // hr {
         //     width: 20vw;
@@ -70,18 +75,32 @@
     //     }
     // }
 
-    .editors-pick__slide__inner {
-        height: max-content;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
 
-        .card {
-            height: 70vw;
-            min-height: 280px;
-            img {
-                object-fit: cover;
+    .editors-pick {
+        .editors-pick__text {
+            align-items: center;
+            text-align: center;
+            background-color: red;
+
+            h2 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .editors-pick__slide__inner {
+            height: max-content;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .card {
+                height: 70vw;
+                min-height: 280px;
+                img {
+                    object-fit: cover;
+                }
             }
         }
     }
