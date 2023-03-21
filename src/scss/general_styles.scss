@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    max-width: 1440px; //temporary
+
 }
 
 body{
@@ -9,6 +9,10 @@ body{
     color: white;
     background-color: $background-color;
     font-family: sans-serif;
+
+    * {
+        border: 1px solid white
+    }
 }
 
 button {
