@@ -41,20 +41,17 @@
     .featured-spots {
         padding-left: 0.5em;
         padding-right: 0.5em;
+        
 
         .featured-spots__text {
             padding: 0;
             text-align: center;
         }
-    }
 
-        // .slide-indicator {
-        // hr {
-        //     width: 20vw;
-        //     max-width: 140px;
-        //     min-width: 0;
-        // }
-    //}
+        .featured-spots__inner {
+            align-items: center;
+        }
+    }
 
     .slider-navigation-wrapper {
         padding: 0 2em 0 2em;
@@ -72,14 +69,11 @@
         }
     }
 
-    // .slide-indicator {
-    //     hr {
-    //         width: 20vw;
-    //         max-width: 140px;
-    //         min-width: 0;
-    //     }
-    // }
-
+     .slide-indicator {
+         hr {
+             width: 50px !important;
+         }
+    }
 
     .editors-pick {
         padding-left: 1em;

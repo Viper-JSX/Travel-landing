@@ -38,14 +38,15 @@
 
 
     hr {
-        display: none;
+        max-width: 400px;   
+        min-width: 50px;
         border-color: #5A5A5A5A;
         border: 1px solid rgb(128, 128, 128);
+        border-color: red;
 
         &:first-child {
             color: blue;
-            width: 39.5vw;   
-            min-width: 150px;
+            width: 39.5vw;
         }
 
         &:last-child {
