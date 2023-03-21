@@ -11,6 +11,15 @@ body{
     font-family: sans-serif;
 }
 
+button {
+    transition: 0.2s;
+
+    &:hover {
+        color: $light-color;
+        background-color: $dark-color;
+    }
+}
+
 blockquote {
     line-height: 30px;
 }
@@ -47,6 +56,11 @@ blockquote {
     height: 2.4rem;
     background-color: $highlight-color;
     border-radius: 2em;
+
+    &:hover {
+        color: $light-color;
+        background-color: $dark-color;
+    }
 }
 
 .read-more.text {
