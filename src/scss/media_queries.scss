@@ -41,18 +41,39 @@
             }
         }
 
+    }
+
+        // .slide-indicator {
+        // hr {
+        //     width: 20vw;
+        //     max-width: 140px;
+        //     min-width: 0;
+        // }
+    //}
+
+    .slider-navigation-wrapper {
+        padding: 0 2em 0 2em;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        gap: 1em;
+
         .slider__navigation { 
             flex-basis: 100%;
         }
 
-        .slide-indicator {
-            hr {
-                width: 20vw;
-                max-width: 140px;
-                min-width: 0;
-            }
+        .slider__navigation {
+            justify-content: center;
         }
     }
+
+    // .slide-indicator {
+    //     hr {
+    //         width: 20vw;
+    //         max-width: 140px;
+    //         min-width: 0;
+    //     }
+    // }
 
     .editors-pick__slide__inner {
         height: max-content;
@@ -83,6 +104,39 @@
         .above-the-sea-image-container {
             width: 80vw;
             height: 80vw;
+        }
+    }
+
+    .mountain-collections {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        .mountain-collections__inner {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            .mountain-collections__text {
+                text-align: center;
+
+                p {
+                    width: 100%;
+                }
+            }
+
+            .mountain-collections__cards {
+                > .card {
+                    margin-bottom: 5em;
+                    text-align: center;
+
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
