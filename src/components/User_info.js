@@ -9,7 +9,7 @@ function UserInfo () {
             <NavigationItem to="*" classNames={[ "username-and-icon" ]}>
                 <span>Gailh Pambudi</span>
             </NavigationItem>
-            <NavigationItem to="*">
+            <NavigationItem to="*" classNames={[ "user-icon" ]}>
                 <Icon url="https://htmlcolorcodes.com/assets/images/colors/black-color-solid-background-1920x1080.png" />
             </NavigationItem>
         </Navigation>

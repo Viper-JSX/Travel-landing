@@ -56,17 +56,13 @@
     padding: 40px 0 40px 0;
     align-self: flex-end;
 
-    .username-and-icon {
-        display: flex;
-    }
-
-    .icon-container {
-        background-color: green;
-    }
-
     > ul {
+        display: flex;
+        align-items: center;
+
         > li {
-            padding: 0 30px 0 20px;
+            background-color: green;
+            padding: 0 20px 0 20px;
             &:first-child {
                 border-right: 2px solid $light-color;
             }
