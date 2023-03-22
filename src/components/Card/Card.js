@@ -19,10 +19,10 @@ function Card ({ card={}, classNames=[], readMoreButtonType={ TEXT } }) {
                 {
                     Array.isArray(card.text) ? 
                     card.text.map((text) => 
-                        <p className="card__text text text-small" key={ text } >{ text }</p>
+                        <p className="text text text-small" key={ text } >{ text }</p>
                     )
                     :
-                    <p className="card__text text text-small" >{ card.text }</p>
+                    <p className="text text text-small" >{ card.text }</p>
                 }
 
                 {
