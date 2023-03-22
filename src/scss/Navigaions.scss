@@ -8,9 +8,9 @@
     transition: 0.5s;
     z-index: 2;
 
-    &.hidden {
-        width: 0;
-    }
+    //&.hidden {
+    //    width: 0;
+    //}
 
     .navigation__items {
         padding: 55px 60px 62px 60px;
@@ -19,6 +19,7 @@
             margin: 2em 0 0 0;
             padding: 0.2em;
             font-weight: 600;
+
         }
     }
 
@@ -26,10 +27,6 @@
         flex-direction: column;
 
         li {
-            &:has(*.active){
-                background-color: $transparent-dark-color;
-            }
-
             &.company-name {
                 background-color: $highlight-color;
             }
