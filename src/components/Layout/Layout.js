@@ -10,7 +10,6 @@ import Explore from "./pages/Explore_page/Explore_page";
 import Help from "./pages/Help_page/Help_page";
 
 function Layout ({ appNavigationVisible, handleEmailSubscribe, handleAppNavigationToggle }) {
-    console.log(appNavigationVisible)
     return (
         <div className="Layout">
             <NavigationToggle isToggled={ appNavigationVisible } handleToggle={ handleAppNavigationToggle } />
