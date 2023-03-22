@@ -13,7 +13,7 @@ function Layout ({ appNavigationVisible, handleEmailSubscribe, handleAppNavigati
     return (
         <div className="Layout">
             <NavigationToggle isToggled={ appNavigationVisible } handleToggle={ handleAppNavigationToggle } />
-            <AppNavigationBar visible={ appNavigationVisible } />
+            <AppNavigationBar visible={ appNavigationVisible } handleAppNavigationToggle={ handleAppNavigationToggle } />
 
             <Routes>
                 <Route path="/" element={ <HomePage handleEmailSubscribe={ handleEmailSubscribe } /> } />
