@@ -7,7 +7,7 @@ import Slide from "../../../../Slider/Slide";
 import ReadMore from "../../../../Read_more";
 import SliderNavigation from "../../../../Slider/Slider_navigation";
 import SlideIndicator from "../../../../Slider/Slide_indicator";
-import UserInfo from "../../../../Header/User_info";
+import UserInfo from "../../../../User_info";
 
 function Intro ({ currentSlideIndex, handleSlideChange }) {
     const [ currentSlide, setCurrentSlide ] = useState(null);

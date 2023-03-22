@@ -8,13 +8,11 @@ import Recommendation from "./pages/Recommendation_page/Recommendation_page";
 import AboutUs from "./pages/About_us_page/About_us_page";
 import Explore from "./pages/Explore_page/Explore_page";
 import Help from "./pages/Help_page/Help_page";
-import Header from "../Header/Header";
 
 function Layout ({ appNavigationVisible, handleEmailSubscribe, handleAppNavigationToggle }) {
     console.log(appNavigationVisible)
     return (
         <div className="Layout">
-            <Header />
             <NavigationToggle isToggled={ appNavigationVisible } handleToggle={ handleAppNavigationToggle } />
             <AppNavigationBar visible={ appNavigationVisible } />
 

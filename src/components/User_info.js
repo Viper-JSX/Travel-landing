@@ -1,6 +1,6 @@
-import Icon from "../Icon";
-import Navigation from "../Navigation/Navigation";
-import NavigationItem from "../Navigation/Navigation_item";
+import Icon from "./Icon";
+import Navigation from "./Navigation/Navigation";
+import NavigationItem from "./Navigation/Navigation_item";
 
 function UserInfo () {
     return (
