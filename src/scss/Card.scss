@@ -6,7 +6,7 @@
     .card__text {
         h2 {
             margin: 0;
-            padding: 2em 0 0 0;
+            
         }
 
         .read-more.button {
@@ -41,6 +41,10 @@
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
+
+        .card__text {
+            padding: 1em;
+        }
 
         &:hover {
             .card__text {
