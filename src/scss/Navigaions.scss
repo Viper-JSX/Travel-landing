@@ -3,6 +3,8 @@
     height: 100vh;
     background-color: $transparent-dark-color;
     position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.5s;
     z-index: 2;
 
@@ -14,7 +16,8 @@
         padding: 55px 60px 62px 60px;
         
         li {
-            margin: 2.2em 0 0 0;
+            margin: 2em 0 0 0;
+            padding: 0.2em;
             font-weight: 600;
         }
     }
