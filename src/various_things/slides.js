@@ -16,7 +16,8 @@ const introSlides = [
     {
         title: "Snowy Mountains",
         text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
-        imgUrl: "https://rare-gallery.com/uploads/posts/5405063-mountain-peak-night-dusk-star-sky-wallpaper-desktop-wallpapers-nature-wallpapers-desktop-background-desktop-backgrounds-wallpapers-amazing-wallpaper-nature-backgrounds-snow-sunrise-landscape-m.jpg",
+        imgUrl: "https://wallpaperaccess.com/full/324636.jpg",
+        //imgUrl: "https://rare-gallery.com/uploads/posts/5405063-mountain-peak-night-dusk-star-sky-wallpaper-desktop-wallpapers-nature-wallpapers-desktop-background-desktop-backgrounds-wallpapers-amazing-wallpaper-nature-backgrounds-snow-sunrise-landscape-m.jpg",
         readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
     }
 ];
