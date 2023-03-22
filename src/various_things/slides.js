@@ -33,10 +33,10 @@ const editorsPickSlides = [
             },
     
             {
-                title: "Chinese bridge",
+                title: "Chinese Gate",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://images7.alphacoders.com/848/848317.jpg",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
     
@@ -72,7 +72,7 @@ const editorsPickSlides = [
                 title: "Flatiron1",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "USA",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
     
@@ -80,7 +80,7 @@ const editorsPickSlides = [
                 title: "Chinese bridge1",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://cdn3.dpmag.com/2021/07/Landscape-Tips-Mike-Mezeul-II.jpg",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
     
@@ -88,7 +88,7 @@ const editorsPickSlides = [
                 title: "Golder gates1",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://cdn.shopify.com/s/files/1/3026/6974/files/happy-alpacas-landscape_1024x1024.jpg?v=1532619630",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
 
@@ -96,7 +96,7 @@ const editorsPickSlides = [
                 title: "Canyon1",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__340.jpg",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
     
@@ -104,7 +104,7 @@ const editorsPickSlides = [
                 title: "Arctica1",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://thumbs.dreamstime.com/b/hot-air-balloons-red-valley-sunset-goreme-cappadocia-turkey-166868339.jpg",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
         ]
@@ -116,7 +116,7 @@ const editorsPickSlides = [
                 title: "Flatiron2",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "USA",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://thelandscapephotoguy.com/wp-content/uploads/2019/01/landscape%20new%20zealand%20S-shape.jpg",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
     
@@ -124,7 +124,7 @@ const editorsPickSlides = [
                 title: "Chinese bridge2",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://media.istockphoto.com/id/1224621364/photo/rural-landscape-in-late-summer.jpg?s=170667a&w=0&k=20&c=PHGngPWMUIJca6L8eWD-OwrcG7b983ycY9MezbMsBP0=",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
     
@@ -132,7 +132,7 @@ const editorsPickSlides = [
                 title: "Golder gates2",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://cdn.naturettl.com/wp-content/uploads/2017/02/22014001/top-tips-improve-landscapes-ross-hoddinott-11-1200x675-cropped.jpg",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
 
@@ -140,7 +140,7 @@ const editorsPickSlides = [
                 title: "Canion2",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://cdn.theatlantic.com/media/img/photo/2022/02/top-shots-2021-international-landsc/a01_Marcin_Zajac_Fire-1/original.jpg",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
     
@@ -148,7 +148,7 @@ const editorsPickSlides = [
                 title: "Arctica2",
                 text: "One of the deepest and largest alpine lakes in Germany and one the best outdors place that you never imagine before.",
                 country: "China",
-                imgUrl: "https://live.staticflickr.com/7330/10344219536_63fc4d6cc1_b.jpg",
+                imgUrl: "https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png",
                 readMore: "https://en.wikipedia.org/wiki/Walchsee_(lake)"
             },
         ]
