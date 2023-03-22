@@ -25,7 +25,7 @@ const featuresSpotsCards = [
 
     {
         title: "Lake Louise",
-        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        text: "Lorem isum dolor sit amet, consectetr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
         imgUrl: "https://www.tripsavvy.com/thmb/LV2L-EE5Q4uZxwR-iF9hPbnhlos=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/LakeLouise_GettyImages-6b1e83ecabbb423c9cc66ea024c0e6bf.jpg",
         readMore: "**",
         country: "Canada"
@@ -33,7 +33,7 @@ const featuresSpotsCards = [
 
     {
         title: "Lake Louise",
-        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        text: "Lorem isum dolor sit amet, cosectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
         imgUrl: "https://www.tripsavvy.com/thmb/LV2L-EE5Q4uZxwR-iF9hPbnhlos=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/LakeLouise_GettyImages-6b1e83ecabbb423c9cc66ea024c0e6bf.jpg",
         readMore: "**",
         country: "Canada"
@@ -41,7 +41,7 @@ const featuresSpotsCards = [
 
     {
         title: "Lake Louise",
-        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        text: "Lorem isum dolor sit amet, consectetur adipiscing elit, sd do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
         imgUrl: "https://www.tripsavvy.com/thmb/LV2L-EE5Q4uZxwR-iF9hPbnhlos=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/LakeLouise_GettyImages-6b1e83ecabbb423c9cc66ea024c0e6bf.jpg",
         readMore: "**",
         country: "Canada"
