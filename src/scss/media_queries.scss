@@ -8,11 +8,13 @@
 
     .app-navigation-bar {
         width: 100vw;
+        min-width: 320px;
         background-color: $dark-color;
         overflow-x: hidden;
 
         &.hidden {
             width: 0;
+            min-width: 0;
         }
     }
 

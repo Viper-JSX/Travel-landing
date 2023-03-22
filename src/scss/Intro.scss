@@ -61,14 +61,14 @@
         align-items: center;
 
         > li {
-            background-color: green;
             padding: 0 20px 0 20px;
             &:first-child {
                 border-right: 2px solid $light-color;
             }
 
             > * {
-                color: $light-color;
+                color: white;
+                text-decoration: none;
             }
         }
     }
